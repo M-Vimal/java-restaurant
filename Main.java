@@ -5,7 +5,7 @@ public class Main {
         boolean start = true;
         while (start){
             Order.main(new String[]{});
-            System.out.println("is there any next customer.'y' for yes.");
+            System.out.println("next customer please .'y' for yes.");
             String next = scanner.nextLine();
             if(next.equals("y")){
                 start = true;
