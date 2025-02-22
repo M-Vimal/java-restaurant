@@ -13,6 +13,7 @@ public class Bill {
     public void generateTotalBill(){
         System.out.println("------------------------------------------");
         System.out.println("|            BILL RECEIPT                |");
+        System.out.println("|order-no - "+ order.order_id+"                |");
         System.out.println("------------------------------------------");
         System.out.printf("| %-20s %4s %10s   |%n", "Item", "QTY", "PRICE");
         System.out.println("------------------------------------------");

@@ -66,12 +66,15 @@ public class Order{
         Bill bill = new Bill(order);
         Menu menu = new Menu();
         menu.displayMenu();
-        System.out.println("please order...");
+        System.out.println("please order...your order number is "+order.order_id);
         String s="y";
         do{
             try {
                 System.out.println("choose item by id");
                 int item_no = scanner.nextInt();
+                if(!(item_no>0 && item_no < 13)){
+                    throw new WrongInput("please enter a number from 1 to 12");
+                }
                 scanner.nextLine();
                 System.out.println("how much you want");
                 int qty = scanner.nextInt();
